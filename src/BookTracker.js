@@ -15,6 +15,7 @@ class BookTracker extends React.Component {
     const keyCode = event.which || event.keyCode
     if (keyCode === 13) {
       console.log("endring! " + event.target.value)
+      // only 14 first chars
       this.getData()
     }
   }
@@ -38,7 +39,6 @@ class BookTracker extends React.Component {
   render() {
     return (
       <div>
-      <i className="fa fa-long-arrow-right fa-3x" aria-hidden="true"></i>
         <SearchBox onInputChange = {this.handleInput} />
         <h2>Tittel: {this.state.title}</h2>
         {this.state.venue} {this.state.handledBy} {this.state.ts}

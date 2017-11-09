@@ -17,7 +17,8 @@ const venues = {
   fnyd: 'Nydalen',
   fgry: 'Grünerløkka',
   fsto: 'Stovner',
-  fhol: 'Holmlia'
+  fhol: 'Holmlia',
+  fgam: 'Tøyen'
 }
 
 const datetimeOptions = { weekday: 'short', year: 'numeric', month: 'short',

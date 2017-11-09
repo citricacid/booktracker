@@ -8,9 +8,8 @@ class ResultTable extends React.Component {
 
   render() {
     const trows = []
-    this.props.rows && this.props.rows.forEach((row) => {
-      console.log(row)
 
+    this.props.rows && this.props.rows.forEach((row) => {
       trows.push(<tr>
         <td><i className={'fa ' + row.type + ' fa-2x'} aria-hidden="true"></i></td>
         <td><i className={'fa ' + row.dev.icon + ' fa-2x'} aria-hidden="true"></i></td>
@@ -19,18 +18,17 @@ class ResultTable extends React.Component {
         </tr>)
     })
 
-
     return (
       <table>
         <thead>
-        <tr>
-          <th>Retning</th>
-          <th>Tittel</th>
-          <th>Lokasjon</th>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
           </tr>
         </thead>
-          <tbody>{trows}
-        </tbody>
+        <tbody>{trows}</tbody>
       </table>
     )
   }
